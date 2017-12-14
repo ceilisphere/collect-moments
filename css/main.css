@@ -1,0 +1,558 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*** Header Styles ***/
+
+header {
+    width: 100%;
+}
+
+#logo {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
+
+/*** Main Content Styles ***/
+
+main {
+    width: 96%;
+    padding: 0 2%;
+    margin: auto;
+ }
+
+ /** Hero Area Styles **/
+
+.top-hike {
+    width: 100%;
+}
+
+.top-img {
+    width: 100%;
+}
+
+/** Sidebar Styles **/
+
+.sidebar {
+    width: 100%;
+}
+
+.sidebar-faq {
+    display: none;
+}
+
+/** Feed Styles **/
+
+.feed {
+    width: 100%;
+}
+
+.feed p {
+    display: none;
+}
+
+.feed-item {
+    clear: both;
+}
+
+.feed-img {
+    width: 50%;
+    float: left;
+}
+
+.feed-info {
+    width: 50%;
+    float: left;
+}
+
+/*** Detail Pages ***/
+
+.detailed-content {
+    width: 100%;
+}
+
+.hikes-img, .blog-img {
+    width: 100%;
+}
+
+/*** Footer Styles ***/
+
+footer {
+    width: 100%;
+    margin: auto;
+    clear: both;
+}
+
+#footer-logo {
+    width: 47.5%
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    /*** Tablet Styles ***/
+
+/** Header Styles **/
+
+.main-content {
+    width: 94%;
+}
+
+#logo {
+    width: 40%;
+    float: left;
+}
+
+nav {
+    width: 60%;
+    float: right;
+}
+
+/** Main Content Styles **/
+
+.top-hike {
+    width: 100%;
+}
+
+.top-img {
+    width: 55%;
+    float: left;
+    padding-right: 3%;
+}
+
+.top-info {
+    width: 35%;
+    float: left;
+}
+
+/** Sidebar Styles **/
+
+.sidebar {
+    clear: both;
+    float: right;
+    width: 30%;
+}
+
+.sidebar-faq {
+    display: block;
+}
+
+/** Feed Styles **/
+
+.feed {
+    width: 55%;
+    float: left;
+}
+
+.feed-img {
+    width: 35%;
+}
+
+/** Detail Pages Styles **/
+
+.hikes-img, .blog-img {
+    float: left;
+    width: 50%;
+    margin: 0px;
+} 
+
+.detail-title {
+    float: right;
+    width: 50%;
+}
+
+aside.detail {
+    width: 100%;
+}
+
+/* What is the point of this? */
+.detail .newsletter h2 {
+    display: inline;
+}
+
+.detail .newsletter input {
+    display: inline;
+}
+
+/** Footer Styles **/
+
+footer {
+    width: 100%;
+    clear: both;
+}
+
+#footer-logo {
+    width: 30%;
+    margin: auto;
+}
+
+ } /*** Tablet Styles ***/
+
+@media (min-width: 940px) {
+    /*** Desktop Styles ***/
+
+/** Header Styles **/
+
+#logo {
+    width: 30%;
+}
+
+nav {
+    width: 60%;
+}
+
+/** Main Content Styles **/
+
+.top-hike {
+    width: 60%;
+    float: left;
+}
+
+.top-img {
+    width: 100%;
+}
+
+.top-info {
+    width: 100%;
+    float: none;
+}
+
+/** Sidebar Styles **/
+
+.sidebar {
+    clear: none;
+    float: right;
+    width: 35%;
+}
+
+/** Feed Styles **/
+
+.feed {
+    clear: none;
+    float: none;
+    width: 100%;
+}
+
+.feed p {
+    display: block;
+}
+
+.feed-img {
+    width: 20%;
+}
+
+/** Detailed Pages Styles **/
+
+article.detailed-content {
+    width: 60%;
+    float: left;
+}
+
+.hikes-img, .blog-img {
+    float: none;
+    width: 100%;
+} 
+
+.detail-title {
+    float: none;
+    width: 100%;
+}
+
+aside.detail {
+    width: 40%;
+} 
+
+.detail-title {
+    float: none;
+    width: 100%;
+}
+
+.detail .newsletter h2 {
+    display: block;
+}
+
+.detail .newsletter input {
+    display: block;
+    width: 100%;
+}
+
+/** Footer **/
+
+#footer-logo {
+    width: 20%;
+    margin: auto;
+}
+
+    
+} /*** Desktop Styles ***/
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
